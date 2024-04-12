@@ -1,0 +1,17 @@
+datos = {"nombre": "Juan", "apellido": "Perez", "edad": 23}
+print("\nAntes\n")
+print(datos)
+print("Nombre:", datos["nombre"])
+print("Apellido:", datos["apellido"])
+print("Edad:", datos["edad"])
+datos["nombre"] = "John"
+datos.update({"apellido": "Martinez", "edad": 33})
+datos.update({"ocupacion": "Programador", "estado_civil": "Soltero"})
+print(datos)
+datos.pop("ocupacion")
+datos.pop("estado_civil")
+print("\nDespues\n")
+print(datos)
+print("Nombre:", datos["nombre"])
+print("Apellido:", datos["apellido"])
+print("Edad:", datos["edad"])
